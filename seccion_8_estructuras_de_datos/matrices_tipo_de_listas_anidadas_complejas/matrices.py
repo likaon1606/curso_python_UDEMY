@@ -98,7 +98,8 @@ for row in matrix:
 
 
 
-# ? Suma de matrices
+# ? ***************** Suma de matrices **********************
+
 # *Para poder sumar dos matrices, necesitamos que tengan la misma dimensión. 
 
 # Dadas dos matrices con la misma dimensión, las podemos usar haciendo uso de bucles `for` anidados.
