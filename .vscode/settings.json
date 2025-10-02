@@ -1,4 +1,9 @@
 {
-  "python-envs.defaultEnvManager": "ms-python.python:system",
-  "python-envs.pythonProjects": []
+    "python.defaultInterpreterPath": "${workspaceFolder}/venv/Scripts/python.exe",
+    "terminal.integrated.profiles.windows": {
+        "GitBash": {
+            "path": "C:\\Program Files\\Git\\bin\\bash.exe"
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "GitBash"
 }
