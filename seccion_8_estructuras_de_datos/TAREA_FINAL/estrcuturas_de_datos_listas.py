@@ -95,11 +95,71 @@ print("Consonantes encontradas:", consonantes)
 # Ejercicio 4
 # Crea un programa que lea una palabra, la guarde en una lista y compruebe si se trata de un palíndromo.
 
+# Leer una palabra o frase
+texto = input("Ingresa una palabra o frase: ")
+
+# Limpiar el texto: quitar espacios y convertir a minúsculas
+limpiarTexto = texto.replace(" ", "").lower()
+
+# Guardar el texto limpio en una lista
+listaPalindromo = list(limpiarTexto)
+
+# Comprobar si es un palíndromo
+if listaPalindromo == listaPalindromo[::-1]:
+    print("Es un palíndromo.")
+else:
+    print("No es un palíndromo.")
+
+#? SOLUCION DEL PROFESOR:
+
+# word = input()
+# l = []
+# isPalindrom = True
+
+# for c in word:
+#     l.append(c)
+
+# n = len(l)
+# for i in range(int(n / 2)):
+#     if l[i] != l[n - (i + 1)]:
+#         isPalindrom = False
+
+# print("¿Es {} palíndromo? {}" .format(word, "Sí" if isPalindrom else "No"))
 
 
 
 # Ejercicio 5
 # Crea un programa que lea una matriz 3 x 3 y devuelva el máximo de cada fila.
+
+# Crear una matriz 3x3 leyendo los valores del usuario
+# matriz = []
+
+# print("Ingresa los valores de la matriz 3x3:")
+# for i in range(3):
+#     fila = []
+#     for j in range(3):
+#         valor = int(input(f"Elemento [{i+1},{j+1}]: "))
+#         fila.append(valor)
+#     matriz.append(fila)
+
+# # Mostrar el máximo de cada fila
+# print("\nMáximo de cada fila:")
+# for i, fila in enumerate(matriz):
+#     print(f"Fila {i+1}: {max(fila)}")
+
+
+#?SOLUCION DEL PROFESOR:
+
+A = []
+for i in range(3):
+    A.append([])
+    for j in range(3):
+        A[i].append(float(input("Introduce el elemento ({}, {})" .format(i, j))))
+
+for i in range(3):
+    A[i].sort(reverse = True)
+    print("El máximo de la fila {} es {}" .format(i, A[i][0]))
+
 
 
 # Ejercicio 6
